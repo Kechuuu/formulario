@@ -1,0 +1,162 @@
+<form id="trainingForm" action="#" method="post">
+  <h2>Formulario de Registro para Entrenamiento</h2>
+
+  <div class="form-group">
+    <label for="name">Nombre Completo:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="age">Edad:</label>
+    <input type="number" id="age" name="age" min="10" max="100" required>
+  </div>
+
+  <div class="form-group">
+    <label for="gender">Género:</label>
+    <select id="gender" name="gender" required>
+      <option value="male">Masculino</option>
+      <option value="female">Femenino</option>
+      <option value="other">Otro</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="height">Estatura (cm):</label>
+    <input type="number" id="height" name="height" min="100" max="250" required>
+  </div>
+
+  <div class="form-group">
+    <label for="weight">Peso (kg):</label>
+    <input type="number" id="weight" name="weight" min="30" max="200" required>
+  </div>
+
+  <div class="form-group">
+    <label for="goals">¿Qué quieres lograr con el entrenamiento?</label>
+    <textarea id="goals" name="goals" rows="4" cols="50" required></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="experience">¿Tienes experiencia previa en entrenamiento?</label>
+    <select id="experience" name="experience" required>
+      <option value="beginner">Principiante</option>
+      <option value="intermediate">Intermedio</option>
+      <option value="advanced">Avanzado</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="days">¿Cuántos días a la semana puedes entrenar?</label>
+    <select id="days" name="days" required>
+      <option value="1">1 día</option>
+      <option value="2">2 días</option>
+      <option value="3">3 días</option>
+      <option value="4">4 días</option>
+      <option value="5">5 días</option>
+      <option value="6">6 días</option>
+      <option value="7">7 días</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="time">Disponibilidad Horaria:</label>
+    <select id="time" name="time" required>
+      <option value="morning">Mañanas</option>
+      <option value="afternoon">Tardes</option>
+      <option value="evening">Noches</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="comments">Comentarios Adicionales:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+  </div>
+
+  <input type="submit" value="Enviar">
+</form>
+
+<style>
+  form {
+    background-color: rgba(77, 77, 77, 0.6); /* Fondo negro con transparencia */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra gris */
+      padding: 10px;
+      width: 90%;
+      max-width: 600px;
+  }
+h2{
+  text-align: center;
+  color: #fbfbfb;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+label {
+  text-align: left;
+  color: aliceblue;
+  margin-bottom: 15px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  background-color: transparent; /* Fondo transparente */
+  border: 2px solid #ccc; /* Borde visible */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px;
+  color: aliceblue; /* Color del texto */
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none; 
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #ffd700; /* Color dorado para el borde cuando el campo está enfocado */
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.5); /* Sombra alrededor del borde en dorado */
+}
+
+/* Estilo para el menú */
+nav {
+  background-color: rgba(#ffd700); /* Color gris con transparencia */
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Estilo para los enlaces del menú */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: rgba(#ffd700); /* Efecto al pasar el cursor por encima */
+}
+option {
+  background-color: #333; /* Fondo oscuro para las opciones */
+  color: #fff; /* Texto blanco para las opciones */
+}
+/* Estilo para el botón de enviar */
+input[type="submit"] {
+  background-color: #ffd700; /* Fondo dorado */
+  border: 2px solid #ccc; /* Borde visible */
+  border-radius: 5px; /* Bordes redondeados */
+  color: #000; /* Color del texto */
+  padding: 10px 20px; /* Relleno del botón */
+  font-size: 1em; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* Transición para el cambio de color */
+  
+}
+
+input[type="submit"]:hover {
+  background-color: #ffc107; /* Fondo dorado más claro al pasar el cursor por encima */
+}
+</style>
